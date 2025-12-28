@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkay Koçak - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h3 class="logo">BK</h3>
+
+        <div class="nav-icerik">
+            <div class="nav-items">
+                <i class="fas fa-home"></i>
+                <a href="#anasayfa">Anasayfa</a>
+            </div>
+
+            <div class="nav-items">
+                <i class="fas fa-user"></i>
+                <a href="#hakkimda">Hakkımda</a>
+            </div>
+
+            <div class="nav-items dropdown">
+                <i class="fas fa-project-diagram"></i>
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projeler
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#projeler12">QR Kod Oluşturucu</a></li>
+                    <li><a class="dropdown-item" href="#projeler12">Ürün Takip Sistemi</a></li>
+                    <li><a class="dropdown-item" href="#projeler12">Klasör Düzenleyici</a></li>
+                    <li><a class="dropdown-item" href="#projeler12">RFID Güvenlik Sistemi</a></li>
+                    <li><a class="dropdown-item" href="#projeler12">Kişisel Portfolyo</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-items">
+                <i class="fas fa-envelope"></i>
+                <a id="iletisim" href="#iletisim12">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="ana-bolum" id="anasayfa">
+        <div class="anaIcerik">
+            <div class="metinKismi">
+                <div class="basliklar">
+                    <h1>Merhaba Ben</h1>
+                    <h1 id="isim">Berkay KOÇAK</h1>
+                </div>
+                <p class="anasayfa-hakkımda">Aksaray Üniversitesinde Yazılım Mühendisliği Okuyorum. Şuan 2. sınıf
+                    öğrencisiyim. Bu sektörde ,bir
+                    yazılım mühendisi adayı olarak,
+                    her yaptığım işte neden sorusunu sorarak kendimi geliştirmeye çalışıyorum.
+                </p>
+
+                <div class="anaIcerikbuton">
+                    <button class="projeButon"> <a href="#projeler12">Projelerimi Gör</a></button>
+                    <button class="iletisimButon"> <a href="#iletisim12">Bana Ulaş!</a></button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="kodEkrani">
+            <div class="kodUst">
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="kodIcerik">
+                <div class="ilkSatir">
+                    <span class="sari">const </span>
+                    <span class="cyan">developer </span>
+                    <span class="sari">= </span>
+                    <span>{</span>
+                </div>
+                <div class="ikinciSatir">
+                    <span class="purple">name</span>
+                    <span>: </span>
+                    <span class="cyan">"Berkay KOÇAK",</span>
+                </div>
+                <div class="ucuncuSatir">
+                    <span class="purple">skills</span>
+                    <span>: </span>
+                    <span class="cyan">["HTML", "CSS", "JavaScript", "React"],</span>
+                </div>
+                <div class="dortSatir">
+                    <span class="purple">coffee</span>
+                    <span>: </span>
+                    <span class="red">true,</span>
+                </div>
+                <div class="besinciSatir">
+                    <span class="purple">buildAwesomeStuff</span>
+                    <span>: </span>
+                    <span class="sari">function</span>
+                    <span>() {</span>
+                </div>
+                <div class="altinciSatir">
+                    <span class="sari">return </span>
+                    <span class="cyan">"Harika Projeler!!"; </span>
+                </div>
+                <div class="yedinciSatir">}</div>
+                <div class="sekizinciSatir">};</div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="projeler" id="projeler12">
+        <div class="projelerBaslik">
+            <h1>Projelerim</h1>
+        </div>
+        <div class="projeTum">
+            <div class="proje">
+                <i class="fa-solid fa-qrcode"></i>
+                <div class="projeMetin">
+                    <h3>QR Kod Oluşturucu</h3>
+                    <p>Java Swing arayüzü ve ZXing kütüphanesi kullanılarak geliştirildi. Dinamik veri girişi ile anlık
+                        barkod üretimi sağlar.</p>
+                    <span>Java</span>
+                    <span>ZXing</span>
+                </div>
+            </div>
+            <div class="proje">
+                <i class="fa-solid fa-cart-shopping" id="c1"></i>
+                <div class="projeMetin">
+                    <h3>Ürün Takip Sistemi</h3>
+                    <p>MSSQL veritabanı bağlantılı, CRUD işlemlerini (Ekle/Sil/Güncelle) tam kapsamlı yöneten, stok
+                        kritik
+                        seviye uyarılarına sahip otomasyon.</p>
+                    <span>C#</span>
+                    <span>MSSQL</span>
+                </div>
+            </div>
+            <div class="proje">
+                <i class="fa-solid fa-folder-open" id="c2"></i>
+                <div class="projeMetin">
+                    <h3>Klasör Düzenleyici</h3>
+                    <p>Python OS ve Shutil modülleri ile dosya uzantılarını (ext) analiz edip, karmaşık dizinleri
+                        saniyeler
+                        içinde kategorize eden otomasyon scripti.</p>
+                    <span>Python</span>
+                    <span>OS, Shutil</span>
+                </div>
+            </div>
+            <div class="proje">
+                <i class="fa-solid fa-folder-open" id="c2"></i>
+                <div class="projeMetin">
+                    <h3>RFID Güvenlik Sistemi</h3>
+                    <p>Fiziksel güvenlik protokollerini simüle eden bir erişim sistemi. Tanımlı kartlar için giriş izni
+                        veren modüler bir donanım prototipi.</p>
+                    <span>C++</span>
+                    <span>RC522</span>
+                    <span>IoT</span>
+                    <span>SPI</span>
+                </div>
+            </div>
+            <div class="proje">
+                <i class="fa-solid fa-folder-open" id="c2"></i>
+                <div class="projeMetin">
+                    <h3>Kişisel Portfolyo</h3>
+                    <p>Modern web standartlarına uygun, Semantic HTML5 ve Saf (Vanilla) CSS ile geliştirildi. Flexbox
+                        mimarisi sayesinde yüksek performanslı bir arayüz tasarımı.
+                    </p>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Flexbox</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Hakkimda" id="hakkimda">
+        <div class="hakkimdaMetin">
+            <h1 class="hakkimdaBaslik">Hakkımda</h1>
+            <p>Merhaba! Ben Berkay Koçak, Aksaray Üniversitesi Yazılım Mühendisliği 2. sınıf öğrencisiyim.
+                Yazılım
+                geliştirme
+                konusundaki tutkum, beni bu alanda derinlemesine bilgi edinmeye ve projeler üretmeye yöneltti.
+                Üniversite hayatım boyunca çeşitli projelerde yer aldım ve farklı programlama dillerinde deneyim
+                kazandım.
+                Amacım, yazılım dünyasında yenilikçi çözümler üretmek ve kullanıcı dostu uygulamalar
+                geliştirmektir.
+                Kendimi sürekli geliştirmek ve sektördeki en son teknolojileri takip etmek için çaba sarf
+                ediyorum.
+                İletişim kurmak ve projelerimi paylaşmak için sabırsızlanıyorum!
+            </p>
+        </div>
+
+        <div class="kodEkrani2">
+            <div class="kodUst">
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="kodIcerik">
+                <div class="ilkSatir">
+                    <span class="sari">class </span>
+                    <span class="cyan">Gelistirici </span>
+                    <span>{</span>
+                </div>
+                <div class="ikinciSatir">
+                    <span class="purple">constructor</span>
+                    <span>()</span>
+                    <span>{</span>
+                </div>
+                <div class="ucuncuSatir">
+                    <span class="purple">this.</span>
+                    <span>ad =</span>
+                    <span class="cyan">"Berkay KOÇAK";</span>
+                </div>
+                <div class="dortSatir">
+                    <span class="purple">this.</span>
+                    <span>tutku =</span>
+                    <span class="red">"Kodlama";</span>
+                </div>
+                <div class="besinciSatir">
+                    <span class="purple">calis</span>
+                    <span>() {</span>
+
+                </div>
+                <div class="altinciSatir">
+                    <span class="sari">while </span>
+                    <span class="cyan">(true) </span>
+                    <span>{</span>
+                </div>
+                <div class="yedinciSatir">
+                    <span class="sari">kodYaz</span>
+                    <span>();</span>
+                </div>
+                <div class="sekizinciSatir">
+                    <span class="sari">kahveIc</span>
+                    <span>();</span>
+                </div>
+                <div class="dokuzuncuSatir">
+                    <span> }</span>
+                </div>
+                <div class="onuncuSatir">
+                    <span> }</span>
+                </div>
+                <div class="onbirinciSatir">
+                    <span>}</span>
+                </div>
+            </div>
+    </section>
+
+
+    <div class="teknoloji-bandi-kapsayici">
+        <div class="teknoloji-bandi">
+            <span class="tekno-item"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tekno-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tekno-item"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tekno-item"><i class="fab fa-react"></i> React</span>
+            <span class="tekno-item"><i class="fab fa-python"></i> Python</span>
+            <span class="tekno-item"><i class="fas fa-database"></i> SQL</span>
+            <span class="tekno-item"><i class="fab fa-docker"></i> Docker</span>
+            <!-- Tekrar (Sonsuz döngü için) -->
+            <span class="tekno-item"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tekno-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tekno-item"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tekno-item"><i class="fab fa-react"></i> React</span>
+            <span class="tekno-item"><i class="fab fa-python"></i> Python</span>
+            <span class="tekno-item"><i class="fas fa-database"></i> SQL</span>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="iletisim-bolumu" id="iletisim12">
+        <div class="iletisim-baslik-container">
+            <h2 class="section-baslik">İletişime Geç</h2>
+            <div class="alt-cizgi"></div>
+        </div>
+
+        <div class="iletisim-kutu">
+            <div class="iletisim-sol">
+                <h3>İletişim Bilgileri</h3>
+                <p class="aciklama">Projeleriniz veya fikir alışverişi için bana her zaman ulaşabilirsiniz.</p>
+
+                <div class="iletisim-detay">
+                    <div class="detay-satir">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>kocakberkay2297@gmail.com</span>
+                    </div>
+                    <div class="detay-satir">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+90 545 909 93 94</span>
+                    </div>
+                    <div class="detay-satir">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Aksaray, TR</span>
+                    </div>
+                </div>
+
+                <div class="sosyal-medya-footer">
+                    <p>Sosyal Medya</p>
+                    <div class="ikonlar">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="iletisim-sag">
+                <form>
+                    <div class="form-satir-ikili">
+                        <div class="input-grubu">
+                            <label>İsim</label>
+                            <input type="text" placeholder="İsminiz">
+                        </div>
+                        <div class="input-grubu">
+                            <label>Soyisim</label>
+                            <input type="text" placeholder="Soyisminiz">
+                        </div>
+                    </div>
+
+                    <div class="input-grubu">
+                        <label>E-Posta Adresi</label>
+                        <input type="email" placeholder="ornek@mail.com">
+                    </div>
+
+                    <div class="input-grubu">
+                        <label>Mesajınız</label>
+                        <textarea placeholder="Mesajınızı buraya yazın..." rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="gonder-buton">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-metin">
+            <h4>Berkay KOÇAK</h4>
+            <p>2026 Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <div class="yan-menu d-none d-lg-flex">
+        <a href="https://www.linkedin.com/in/berkay-ko%C3%A7ak-8b6764252/" class="yan-link"><i
+                class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/BerkayKocakorg" class="yan-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/berkay_kocak1/" class="yan-link"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>,
+    <script src="script.js"></script>
+</body>
+
+
+</html>
